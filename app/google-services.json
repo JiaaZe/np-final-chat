@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "902490646333",
+    "firebase_url": "https://np-chat-f80e7.firebaseio.com",
+    "project_id": "np-chat-f80e7",
+    "storage_bucket": "np-chat-f80e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902490646333:android:762c48da61a339eb",
+        "android_client_info": {
+          "package_name": "com.example.jezer.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902490646333-pkfjehu6mm88gjet39ko0udnapn8kes3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jezer.chat",
+            "certificate_hash": "6c67f17666dac8b561d5aa2db950f6f593ed8747"
+          }
+        },
+        {
+          "client_id": "902490646333-ehd6fg35mle9on4rcka1488vj32v974h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC19L6H8zvoJVHpgBcdRtITYa8UJ2W0mlk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902490646333-ehd6fg35mle9on4rcka1488vj32v974h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed">
+
+    <include
+        android:id="@+id/chat_bar"
+        layout="@layout/layout_bar">
+    </include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_linear_layout"
+        android:layout_below="@+id/chat_bar"
+        android:layout_alignParentStart="false"
+        android:background="@color/common_google_signin_btn_text_dark_default"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/chat_input_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="10"
+            android:background="@color/common_google_signin_btn_text_dark_pressed"
+            android:cursorVisible="true"
+            android:hint="Enter Message..."
+            android:inputType="text"
+            android:padding="0dp"
+            android:paddingStart="7dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textCursorDrawable="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/chat_sendMessage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="15dp"
+            android:src="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

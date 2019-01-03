@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jezer.chat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity_main"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_find"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Activity_chat"
+            android:theme="@style/AppTheme_NoBar"
+            android:parentActivityName=".Activity_main">
+        </activity>
+        <activity
+            android:name=".Activity_login"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Activity_quick"
+            android:label="Chat+">
+        </activity>
+        <activity
+            android:name=".Activity_register"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Activity_start"
+            android:theme="@style/AppTheme_NoBar">
+        </activity>
+
+    </application>
+
+</manifest>
