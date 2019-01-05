@@ -15,4 +15,5 @@
     <string name="all_users">All Users</string>
     <string name="login_to_your_account">Login to Your Account</string>
     <string name="login_btn">LOGIN</string>
+    <string name="title_activity_map">Map</string>
 </resources>

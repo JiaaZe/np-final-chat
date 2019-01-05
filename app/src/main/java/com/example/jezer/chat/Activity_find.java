@@ -24,7 +24,7 @@ public class Activity_find extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_qChat);
                     return true;
                 case R.id.navigation_find:
-                    mTextMessage.setText(R.string.title_chat);
+                    mTextMessage.setText(R.string.title_find);
                     return true;
             }
             return false;

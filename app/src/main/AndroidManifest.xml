@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jezer.chat">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.andriod.providers.gsf.permisson.READ_GSERVICES" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,29 +26,27 @@
         </activity>
         <activity
             android:name=".Activity_find"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".Activity_chat"
-            android:theme="@style/AppTheme_NoBar"
-            android:parentActivityName=".Activity_main">
-        </activity>
+            android:parentActivityName=".Activity_main"
+            android:theme="@style/AppTheme_NoBar" />
         <activity
             android:name=".Activity_login"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".Activity_quick"
-            android:label="Chat+">
-        </activity>
+            android:label="Chat+" />
         <activity
             android:name=".Activity_register"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".Activity_start"
-            android:theme="@style/AppTheme_NoBar">
-        </activity>
+            android:theme="@style/AppTheme_NoBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
     </application>
 

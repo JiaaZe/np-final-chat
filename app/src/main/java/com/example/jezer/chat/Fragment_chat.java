@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -76,7 +77,10 @@ public class Fragment_chat extends Fragment {
                 final String user_id = getRef(position).getKey();
                 final String user_name = model.getName();
 
-                if(user_id != selfID){
+                if(user_id.equals(selfID)){
+                    holder.hide(1);
+                }else {
+                    holder.hide(0);
                     holder.userName.setText(model.getName());
                     holder.mView.setOnClickListener(new View.OnClickListener() {
 
@@ -90,7 +94,6 @@ public class Fragment_chat extends Fragment {
 
                     });
                 }
-
             }
         };
 
@@ -100,13 +103,21 @@ public class Fragment_chat extends Fragment {
 
 
     public class UsersViewHolder extends RecyclerView.ViewHolder{
-        View mView;
-        TextView userName;
+            View mView;
+            TextView userName;
         public UsersViewHolder(View itemView){
             super(itemView);
             mView = itemView;
             userName = itemView.findViewById(R.id.user_single_name);
+        }
 
+        public void hide(int i){
+            if(i == 1) {
+                mView.setVisibility(View.GONE);
+                mView.setLayoutParams(new LinearLayout.LayoutParams(0, 0));
+            }
+            else
+                mView.setVisibility(View.VISIBLE);
         }
     }
 }
